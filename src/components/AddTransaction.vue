@@ -3,13 +3,11 @@
             <form id="form" @submit.prevent="onSubmit">
             <div class="form-control">
                 <label for="text">Text</label>
-                <input type="text" id="text" v-model="text" />placeholder="Enter text..." />
+                <input type="text" id="text" v-model="text" placeholder="Enter text..." />
             </div>
             <div class="form-control">
-                <label for="amount"
-                >Amount <br />
-                (negative - expense, positive - income)</label
-                >
+                <label for="amount">Amount <br />
+                (negative - expense, positive - income)</label>
                 <input type="number" v-model="amount" id="amount" placeholder="Enter amount..." />
             </div>
             <button class="btn">Add transaction</button>
